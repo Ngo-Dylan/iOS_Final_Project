@@ -1,1 +1,5 @@
-# iOS_Final_Project
+# RemindYou
+
+> Quoc Luong
+>
+> Dylan Ngo
