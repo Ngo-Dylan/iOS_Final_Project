@@ -55,6 +55,7 @@ struct Todo: View {
                                 .frame(width: 50, height: 50)
                                 .padding()
                         }
+                        Spacer()
                     }
                 }
                 if viewModel.taskList.count == 0{
@@ -63,14 +64,14 @@ struct Todo: View {
             }
             .navigationTitle("ToDo")
         }
-//        .fullScreenCover(isPresented: $isPresentCreateTask, content: {
-//            withAnimation {
-////                NewTaskView(viewModel: viewModel, isPresentCreateTask: $isPresentCreateTask)
-//            }
-//        })
-//        .onAppear{
-//            viewModel.taskList = viewModel.getAllTaskList()
-//        }
+        .fullScreenCover(isPresented: $isPresentCreateTask, content: {
+            withAnimation {
+                Todo_NewTask(viewModel: viewModel, isPresentCreateTask: $isPresentCreateTask)
+            }
+        })
+        .onAppear{
+            viewModel.taskList = viewModel.getAllTaskList()
+        }
         
     }
 }

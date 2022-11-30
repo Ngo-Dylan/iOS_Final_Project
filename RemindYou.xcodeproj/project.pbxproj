@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC28ACFD29380B4F0048BB5D /* Todo_NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC28ACFC29380B4F0048BB5D /* Todo_NewTask.swift */; };
 		FC7218E4293689C800EBE57A /* RemindYouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7218E3293689C800EBE57A /* RemindYouApp.swift */; };
 		FC7218E6293689C800EBE57A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7218E5293689C800EBE57A /* ContentView.swift */; };
 		FC7218E8293689CA00EBE57A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC7218E7293689CA00EBE57A /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC28ACFC29380B4F0048BB5D /* Todo_NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_NewTask.swift; sourceTree = "<group>"; };
 		FC7218E0293689C800EBE57A /* RemindYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7218E3293689C800EBE57A /* RemindYouApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindYouApp.swift; sourceTree = "<group>"; };
 		FC7218E5293689C800EBE57A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				FC7218F929368BB100EBE57A /* Todo.swift */,
 				FC7218FB29368C3500EBE57A /* TabbarView.swift */,
 				FC7218FD29368D1C00EBE57A /* Calendar.swift */,
+				FC28ACFC29380B4F0048BB5D /* Todo_NewTask.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				FC72190229368E0700EBE57A /* TaskList.swift in Sources */,
 				FC7218E6293689C800EBE57A /* ContentView.swift in Sources */,
 				FC7218F0293689CA00EBE57A /* RemindYou.xcdatamodeld in Sources */,
+				FC28ACFD29380B4F0048BB5D /* Todo_NewTask.swift in Sources */,
 				FC7218E4293689C800EBE57A /* RemindYouApp.swift in Sources */,
 				FC7218FA29368BB100EBE57A /* Todo.swift in Sources */,
 				FC7218FE29368D1C00EBE57A /* Calendar.swift in Sources */,
