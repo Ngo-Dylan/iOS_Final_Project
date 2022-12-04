@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FC28ACFD29380B4F0048BB5D /* Todo_NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC28ACFC29380B4F0048BB5D /* Todo_NewTask.swift */; };
+		FC28AD43293C1BD50048BB5D /* Todo_TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC28AD42293C1BD50048BB5D /* Todo_TaskDetailView.swift */; };
 		FC7218E4293689C800EBE57A /* RemindYouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7218E3293689C800EBE57A /* RemindYouApp.swift */; };
 		FC7218E6293689C800EBE57A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7218E5293689C800EBE57A /* ContentView.swift */; };
 		FC7218E8293689CA00EBE57A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC7218E7293689CA00EBE57A /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		FC28ACFC29380B4F0048BB5D /* Todo_NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_NewTask.swift; sourceTree = "<group>"; };
+		FC28AD42293C1BD50048BB5D /* Todo_TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_TaskDetailView.swift; sourceTree = "<group>"; };
 		FC7218E0293689C800EBE57A /* RemindYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7218E3293689C800EBE57A /* RemindYouApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindYouApp.swift; sourceTree = "<group>"; };
 		FC7218E5293689C800EBE57A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				FC7218FB29368C3500EBE57A /* TabbarView.swift */,
 				FC7218FD29368D1C00EBE57A /* Calendar.swift */,
 				FC28ACFC29380B4F0048BB5D /* Todo_NewTask.swift */,
+				FC28AD42293C1BD50048BB5D /* Todo_TaskDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				FC7218FC29368C3500EBE57A /* TabbarView.swift in Sources */,
 				FC7218ED293689CA00EBE57A /* Persistence.swift in Sources */,
 				FC72190029368DA100EBE57A /* LandingViewModel.swift in Sources */,
+				FC28AD43293C1BD50048BB5D /* Todo_TaskDetailView.swift in Sources */,
 				FC7219042936904000EBE57A /* CategoryModel.swift in Sources */,
 				FC72190229368E0700EBE57A /* TaskList.swift in Sources */,
 				FC7218E6293689C800EBE57A /* ContentView.swift in Sources */,

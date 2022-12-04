@@ -28,18 +28,17 @@ struct Todo: View {
                 }
                 ScrollView{
                     VStack{
-                        //Collection View
-//                        LazyVGrid(columns: [GridItem(.adaptive(minimum: 150, maximum: 200), spacing: 20)], content: {
-//                            ForEach(viewModel.taskList, id: \.categoryId){ task in
-//                                NavigationLink(
-//                                    destination: TaskDetailView(viewModel: viewModel, taskDetails: task)) {
-//                                    if task.isShow{
-//                                        TaskCellView(taskImg: task.categoryImage, categoryName: task.categoryName, noOftask: task.noOfTasks)
-//                                    }
-//                                }
-//                            }
-//                        })
-//                        Spacer()
+                        LazyVGrid(columns: [GridItem(.adaptive(minimum: 150, maximum: 200), spacing: 20)], content: {
+                            ForEach(viewModel.taskList, id: \.categoryId){ task in
+                                NavigationLink(
+                                    destination: Todo_TaskDetailView(viewModel: viewModel, taskDetails: task)) {
+                                    if task.isShow{
+                                        TaskCellView(taskImg: task.categoryImage, categoryName: task.categoryName, noOftask: task.noOfTasks)
+                                    }
+                                }
+                            }
+                        })
+                        Spacer()
                     }
                     .padding()
                 }
@@ -62,7 +61,7 @@ struct Todo: View {
                     TaskEmptySateView()
                 }
             }
-            .navigationTitle("ToDo")
+            .navigationTitle("To-Do")
         }
         .fullScreenCover(isPresented: $isPresentCreateTask, content: {
             withAnimation {

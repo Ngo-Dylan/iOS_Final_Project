@@ -18,7 +18,7 @@ class CoreDataManager {
     }
     
     init() {
-        persistentContainer = NSPersistentContainer(name: "ToDoApp")
+        persistentContainer = NSPersistentContainer(name: "RemindYou")
         persistentContainer.loadPersistentStores { desc, error in
             if let error = error{
                 fatalError("Unable to initialize Core Data \(error)")
@@ -26,7 +26,7 @@ class CoreDataManager {
         }
     }
     
-    //Save object to coredata
+    // Save object to coredata
     func save(){
         do{
             try viewContext.save()
@@ -38,8 +38,8 @@ class CoreDataManager {
     }
     
     
-    /// Get All Task
-    /// - Returns: [Task]
+    // Get All Task
+    // Returns: [Task]
     func getAllTask() -> [Task]{
         
         let request: NSFetchRequest<Task> = Task.fetchRequest()

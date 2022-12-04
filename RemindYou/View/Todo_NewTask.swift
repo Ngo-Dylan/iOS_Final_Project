@@ -16,13 +16,14 @@ struct NewTaskHeaderView: View {
             Text("New Task")
                 .font(.title2)
                 .fontWeight(.medium)
+                .padding(.leading, 50)
             Spacer()
             Button(action: {
                 isPresentCreateTask = false
             }){
                 Image(systemName: "xmark")
             }
-            .padding(.trailing,20)
+            .padding(.trailing,30)
         }
     }
 }
@@ -34,7 +35,7 @@ struct NewTaskEditorView: View{
     
     var body: some View{
         VStack(alignment:.leading){
-            Text("What are your planning?")
+            Text("What are you planning?")
                 .foregroundColor(.gray)
                 .frame(height: 10, alignment: .leading)
             
@@ -72,17 +73,17 @@ struct NewTaskBottomView: View{
                 Spacer()
             }
             
-            //Add Notes
+            //Add title
             HStack{
                 Image(systemName: "square.and.pencil")
                     .foregroundColor(.gray)
                     .frame(width: 30, height: 30, alignment: .leading)
                 VStack{
                     TextEditor(text: $notes)
-                        .foregroundColor(notes == "add note" ? .gray : .black)
+                        .foregroundColor(notes == "Add title" ? .gray : .black)
                         .frame(height: 40)
                         .onTapGesture {
-                            if notes == "add note"{
+                            if notes == "Add title"{
                                 notes = ""
                             }
                         }
@@ -95,7 +96,7 @@ struct NewTaskBottomView: View{
                     .frame(width: 30, height: 30, alignment: .leading)
                 VStack{
                     Text(categoryName)
-                        .foregroundColor(categoryName == "Select Category" ? .gray : .black)
+                        .foregroundColor(categoryName == " Select Category" ? .gray : .black)
                 }
                 Spacer()
             }
@@ -118,20 +119,24 @@ struct CategoryView: View{
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 100, maximum: 150), spacing: 10)], content: {
                 
                 ForEach(categoryList){ cat in
-                    HStack{
-                        Image(cat.categoryImage)
-                            .resizable()
-                            .frame(width: 20, height: 20)
-                        Text(cat.categoryName)
-                            .font(.callout)
-                            .fontWeight(.regular)
-                        Spacer()
+                    if (cat.categoryName != "All")
+                    {
+                        HStack{
+                            Image(cat.categoryImage)
+                                .resizable()
+                                .frame(width: 20, height: 20)
+                            Text(cat.categoryName)
+                                .font(.callout)
+                                .fontWeight(.regular)
+                            Spacer()
+                        }
+                        .onTapGesture {
+                            categoryName = cat.categoryName
+                            categoryId = cat.id
+                        }
+                        .frame(width: 120, height: 30)
                     }
-                    .onTapGesture {
-                        categoryName = cat.categoryName
-                        categoryId = cat.id
-                    }
-                    .frame(width: 120, height: 30)
+                    
                 }
             })
         }
@@ -153,8 +158,8 @@ struct Todo_NewTask: View {
     @Binding var isPresentCreateTask: Bool
     @State var txtTask:String = ""
     @State var selectedDate:Date = Date()
-    @State var notes:String = "add note"
-    @State var categoryName:String = "Select Category"
+    @State var notes:String = "Add title"
+    @State var categoryName:String = " Select Category"
     @State var categoryId:Int = 0
     
     //Alert
@@ -185,12 +190,12 @@ struct Todo_NewTask: View {
                 Button(action: {
                     if txtTask == ""{
                         alertTitle = "Oops"
-                        alertSubTitle = "Please enter Task name"
+                        alertSubTitle = "Please enter Task Description"
                         isShowAlert = true
                     }
-                    else if categoryName == "Select Category"{
+                    else if categoryName == " Select Category"{
                         alertTitle = "Oops"
-                        alertSubTitle = "Please select category"
+                        alertSubTitle = "Please select Category"
                         isShowAlert = true
                     }
                     else{
@@ -200,7 +205,7 @@ struct Todo_NewTask: View {
                         task.taskDate = selectedDate
                         task.taskCompleted = false
                         task.taskName = txtTask
-                        task.taskNote = notes == "add note" ? "" : notes
+                        task.taskNote = notes == "Add title" ? "" : notes
                         CoreDataManager.shared.save()
                         viewModel.taskList = viewModel.getAllTaskList()
                         isPresentCreateTask = false

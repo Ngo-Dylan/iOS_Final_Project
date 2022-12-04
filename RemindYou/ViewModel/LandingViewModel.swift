@@ -12,7 +12,7 @@ class LandingViewModel: ObservableObject {
     @Published var taskList:[TaskList] = []
     @Published var taskArray:[Task] = []
     
-    /// Task Mock Data
+    // Task Mock Data
     func getTaskList(){
         let taskList = [
             TaskList(categoryName: "All", noOfTasks: 53, categoryImage: Image("task_all"), categoryId: 0),
@@ -28,8 +28,8 @@ class LandingViewModel: ObservableObject {
     }
     
     
-    /// Generate task List
-    /// - Returns: will return [TaskList]
+    // Generate task List
+    // Returns: will return [TaskList]
     func getAllTaskList() -> [TaskList]
     {
         var taskList: [TaskList] = []
@@ -56,9 +56,9 @@ class LandingViewModel: ObservableObject {
     }
     
     
-    /// Get categoryImage from category name
-    /// - Parameter categoryName: Category Name
-    /// - Returns: will return Category Image
+    // Get categoryImage from category name
+    // Parameter categoryName: Category Name
+    // Returns: will return Category Image
     func getCategoryImage(categoryName:String) -> Image{
         switch categoryName {
         case "All":
