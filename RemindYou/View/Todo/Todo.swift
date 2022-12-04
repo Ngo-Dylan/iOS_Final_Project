@@ -108,7 +108,7 @@ struct TaskCellView:View {
         .frame(width: 140, height: 140)
         .padding(.horizontal)
         .background(Color.white)
-        .cornerRadius(10)
+        .cornerRadius(15)
     }
 }
 

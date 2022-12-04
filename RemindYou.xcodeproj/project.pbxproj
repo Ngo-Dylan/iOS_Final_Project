@@ -98,8 +98,7 @@
 		FC7218F629368B4C00EBE57A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FC72190129368E0700EBE57A /* TaskList.swift */,
-				FC7219032936904000EBE57A /* CategoryModel.swift */,
+				FC7B4669293D313800618EA4 /* Todo */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,13 +114,38 @@
 		FC7218F829368B6C00EBE57A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FC7218F929368BB100EBE57A /* Todo.swift */,
+				FC7B4668293D311600618EA4 /* Calendar */,
+				FC7B4667293D2F8D00618EA4 /* Todo */,
 				FC7218FB29368C3500EBE57A /* TabbarView.swift */,
-				FC7218FD29368D1C00EBE57A /* Calendar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC7B4667293D2F8D00618EA4 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				FC7218F929368BB100EBE57A /* Todo.swift */,
 				FC28ACFC29380B4F0048BB5D /* Todo_NewTask.swift */,
 				FC28AD42293C1BD50048BB5D /* Todo_TaskDetailView.swift */,
 			);
-			path = View;
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		FC7B4668293D311600618EA4 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FC7218FD29368D1C00EBE57A /* Calendar.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		FC7B4669293D313800618EA4 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				FC72190129368E0700EBE57A /* TaskList.swift */,
+				FC7219032936904000EBE57A /* CategoryModel.swift */,
+			);
+			path = Todo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
