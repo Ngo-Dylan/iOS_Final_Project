@@ -10,13 +10,13 @@ import SwiftUI
 struct TabbarView: View {
     var body: some View {
         TabView {
+            CalendarView()
+                .tabItem {
+                    Label("Calendar", systemImage: "calendar")
+                }
             Todo()
                 .tabItem {
                     Label("Todo", systemImage: "list.bullet")
-                }
-            Calendar()
-                .tabItem {
-                    Label("Calendar", systemImage: "calendar")
                 }
         }
     }

@@ -94,7 +94,7 @@ struct Todo_TaskDetailView: View {
                         TaskDetailsCell(viewModel: viewModel, task: task)
                     }
                 }
-                .padding(.bottom, 5)
+                .padding(.bottom, 1)
             }
         }
         .navigationBarBackButtonHidden(true)

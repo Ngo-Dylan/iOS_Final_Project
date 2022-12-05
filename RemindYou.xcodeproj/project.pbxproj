@@ -22,6 +22,15 @@
 		FC72190229368E0700EBE57A /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC72190129368E0700EBE57A /* TaskList.swift */; };
 		FC7219042936904000EBE57A /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7219032936904000EBE57A /* CategoryModel.swift */; };
 		FC721906293690E900EBE57A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC721905293690E900EBE57A /* CoreDataManager.swift */; };
+		FC7B466D293DC3C400618EA4 /* Calendar_Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B466C293DC3C400618EA4 /* Calendar_Page.swift */; };
+		FC7B466F293DC40400618EA4 /* CalendarPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B466E293DC40400618EA4 /* CalendarPageViewModel.swift */; };
+		FC7B4672293DC47D00618EA4 /* PageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B4671293DC47D00618EA4 /* PageManager.swift */; };
+		FC7B4675293DC69300618EA4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B4674293DC69300618EA4 /* Date.swift */; };
+		FC7B4677293DC71000618EA4 /* Calendar_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B4676293DC71000618EA4 /* Calendar_Cell.swift */; };
+		FC7B4679293DC83200618EA4 /* Calendar_DateCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B4678293DC83200618EA4 /* Calendar_DateCollection.swift */; };
+		FC7B467B293DCAE800618EA4 /* Calendar_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B467A293DCAE800618EA4 /* Calendar_Base.swift */; };
+		FC7B467D293DCB2800618EA4 /* Calendar_ToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B467C293DCB2800618EA4 /* Calendar_ToolBar.swift */; };
+		FC7B467F293DCBB800618EA4 /* Calendar_WeekBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B467E293DCBB800618EA4 /* Calendar_WeekBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +50,15 @@
 		FC72190129368E0700EBE57A /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		FC7219032936904000EBE57A /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		FC721905293690E900EBE57A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		FC7B466C293DC3C400618EA4 /* Calendar_Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar_Page.swift; sourceTree = "<group>"; };
+		FC7B466E293DC40400618EA4 /* CalendarPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPageViewModel.swift; sourceTree = "<group>"; };
+		FC7B4671293DC47D00618EA4 /* PageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageManager.swift; sourceTree = "<group>"; };
+		FC7B4674293DC69300618EA4 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		FC7B4676293DC71000618EA4 /* Calendar_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar_Cell.swift; sourceTree = "<group>"; };
+		FC7B4678293DC83200618EA4 /* Calendar_DateCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar_DateCollection.swift; sourceTree = "<group>"; };
+		FC7B467A293DCAE800618EA4 /* Calendar_Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar_Base.swift; sourceTree = "<group>"; };
+		FC7B467C293DCB2800618EA4 /* Calendar_ToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar_ToolBar.swift; sourceTree = "<group>"; };
+		FC7B467E293DCBB800618EA4 /* Calendar_WeekBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar_WeekBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +116,8 @@
 		FC7218F629368B4C00EBE57A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FC72190129368E0700EBE57A /* TaskList.swift */,
-				FC7219032936904000EBE57A /* CategoryModel.swift */,
+				FC7B4673293DC67B00618EA4 /* Calendar */,
+				FC7B4669293D313800618EA4 /* Todo */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,7 +125,8 @@
 		FC7218F729368B5F00EBE57A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				FC7218FF29368DA100EBE57A /* LandingViewModel.swift */,
+				FC7B466B293D8B7700618EA4 /* Calendar */,
+				FC7B466A293D8B6A00618EA4 /* Todo */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -115,13 +134,69 @@
 		FC7218F829368B6C00EBE57A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FC7218F929368BB100EBE57A /* Todo.swift */,
+				FC7B4668293D311600618EA4 /* Calendar */,
+				FC7B4667293D2F8D00618EA4 /* Todo */,
 				FC7218FB29368C3500EBE57A /* TabbarView.swift */,
-				FC7218FD29368D1C00EBE57A /* Calendar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC7B4667293D2F8D00618EA4 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				FC7218F929368BB100EBE57A /* Todo.swift */,
 				FC28ACFC29380B4F0048BB5D /* Todo_NewTask.swift */,
 				FC28AD42293C1BD50048BB5D /* Todo_TaskDetailView.swift */,
 			);
-			path = View;
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		FC7B4668293D311600618EA4 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FC7218FD29368D1C00EBE57A /* Calendar.swift */,
+				FC7B466C293DC3C400618EA4 /* Calendar_Page.swift */,
+				FC7B4676293DC71000618EA4 /* Calendar_Cell.swift */,
+				FC7B4678293DC83200618EA4 /* Calendar_DateCollection.swift */,
+				FC7B467A293DCAE800618EA4 /* Calendar_Base.swift */,
+				FC7B467C293DCB2800618EA4 /* Calendar_ToolBar.swift */,
+				FC7B467E293DCBB800618EA4 /* Calendar_WeekBar.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		FC7B4669293D313800618EA4 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				FC72190129368E0700EBE57A /* TaskList.swift */,
+				FC7219032936904000EBE57A /* CategoryModel.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		FC7B466A293D8B6A00618EA4 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				FC7218FF29368DA100EBE57A /* LandingViewModel.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		FC7B466B293D8B7700618EA4 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FC7B466E293DC40400618EA4 /* CalendarPageViewModel.swift */,
+				FC7B4671293DC47D00618EA4 /* PageManager.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		FC7B4673293DC67B00618EA4 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FC7B4674293DC69300618EA4 /* Date.swift */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,15 +270,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC7218FC29368C3500EBE57A /* TabbarView.swift in Sources */,
+				FC7B467D293DCB2800618EA4 /* Calendar_ToolBar.swift in Sources */,
+				FC7B4677293DC71000618EA4 /* Calendar_Cell.swift in Sources */,
+				FC7B467F293DCBB800618EA4 /* Calendar_WeekBar.swift in Sources */,
 				FC7218ED293689CA00EBE57A /* Persistence.swift in Sources */,
 				FC72190029368DA100EBE57A /* LandingViewModel.swift in Sources */,
 				FC28AD43293C1BD50048BB5D /* Todo_TaskDetailView.swift in Sources */,
+				FC7B4672293DC47D00618EA4 /* PageManager.swift in Sources */,
+				FC7B467B293DCAE800618EA4 /* Calendar_Base.swift in Sources */,
 				FC7219042936904000EBE57A /* CategoryModel.swift in Sources */,
+				FC7B4675293DC69300618EA4 /* Date.swift in Sources */,
 				FC72190229368E0700EBE57A /* TaskList.swift in Sources */,
+				FC7B466D293DC3C400618EA4 /* Calendar_Page.swift in Sources */,
 				FC7218E6293689C800EBE57A /* ContentView.swift in Sources */,
+				FC7B466F293DC40400618EA4 /* CalendarPageViewModel.swift in Sources */,
 				FC7218F0293689CA00EBE57A /* RemindYou.xcdatamodeld in Sources */,
 				FC28ACFD29380B4F0048BB5D /* Todo_NewTask.swift in Sources */,
 				FC7218E4293689C800EBE57A /* RemindYouApp.swift in Sources */,
+				FC7B4679293DC83200618EA4 /* Calendar_DateCollection.swift in Sources */,
 				FC7218FA29368BB100EBE57A /* Todo.swift in Sources */,
 				FC7218FE29368D1C00EBE57A /* Calendar.swift in Sources */,
 				FC721906293690E900EBE57A /* CoreDataManager.swift in Sources */,
