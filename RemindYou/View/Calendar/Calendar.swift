@@ -40,8 +40,8 @@ struct CalendarView: View {
             Spacer()
                 .frame(height: 100)
             Text("Calendar")
-                .font(.system(size: 40))
-                .foregroundColor(.white)
+                .font(.system(size: 30))
+                .foregroundColor(.black)
                 .bold()
             ZStack(alignment: .top){
                 RoundedRectangle(cornerRadius: 25)
@@ -53,19 +53,18 @@ struct CalendarView: View {
                         .padding(.horizontal)
                         .padding(.vertical)
                         .environmentObject(calendarObj)
-//                    VStack{
-//                        Spacer()
-//                            .frame(height: 30)
-//                        HStack{
-//                            Text("Check calendar")
-//                                .bold()
-//                                .foregroundColor(Color.white)
-//                                .font(.system(size: 17))
-//                                .padding(.horizontal)
-//                            Spacer()
-//                        }
-//                    }.padding(.horizontal, 30)
-//                        .frame(alignment: .topLeading)
+                    VStack{
+                        Spacer()
+                            .frame(height: 7)
+                        HStack{
+                            Text("We think You might want to check the calendar before planning. And here it is!")
+                                .foregroundColor(Color.black)
+                                .font(.system(size: 16))
+                                .padding(.horizontal)
+                            Spacer()
+                        }
+                    }.padding(.horizontal, 30)
+                        .frame(alignment: .topLeading)
                 }
             }
             Spacer()
