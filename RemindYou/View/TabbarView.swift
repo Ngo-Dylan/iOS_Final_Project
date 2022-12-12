@@ -18,6 +18,10 @@ struct TabbarView: View {
                 .tabItem {
                     Label("Todo", systemImage: "list.bullet")
                 }
+            DayCount()
+                .tabItem() {
+                    Label("Day Count", systemImage: "calendar.day.timeline.trailing")
+                }
         }
     }
 }

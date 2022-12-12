@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		FC28ACFD29380B4F0048BB5D /* Todo_NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC28ACFC29380B4F0048BB5D /* Todo_NewTask.swift */; };
 		FC28AD43293C1BD50048BB5D /* Todo_TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC28AD42293C1BD50048BB5D /* Todo_TaskDetailView.swift */; };
+		FC35C8C62946EE4100414D34 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35C8C52946EE4100414D34 /* CardListView.swift */; };
+		FC35C8C82946EEA200414D34 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35C8C72946EEA200414D34 /* CardsViewModel.swift */; };
+		FC35C8CA2946EEED00414D34 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35C8C92946EEED00414D34 /* Card.swift */; };
+		FC35C8CC2946EF7600414D34 /* CardDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35C8CB2946EF7600414D34 /* CardDetails.swift */; };
+		FC35C8CE2946F00300414D34 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35C8CD2946F00300414D34 /* AddEventView.swift */; };
+		FC35C8D02946F17700414D34 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35C8CF2946F17700414D34 /* CardView.swift */; };
+		FC35C8D22946F29D00414D34 /* DateSubstraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35C8D12946F29D00414D34 /* DateSubstraction.swift */; };
+		FC35C8D42946F2B800414D34 /* CodableColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35C8D32946F2B800414D34 /* CodableColors.swift */; };
 		FC7218E4293689C800EBE57A /* RemindYouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7218E3293689C800EBE57A /* RemindYouApp.swift */; };
 		FC7218E6293689C800EBE57A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7218E5293689C800EBE57A /* ContentView.swift */; };
 		FC7218E8293689CA00EBE57A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC7218E7293689CA00EBE57A /* Assets.xcassets */; };
@@ -31,11 +39,20 @@
 		FC7B467B293DCAE800618EA4 /* Calendar_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B467A293DCAE800618EA4 /* Calendar_Base.swift */; };
 		FC7B467D293DCB2800618EA4 /* Calendar_ToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B467C293DCB2800618EA4 /* Calendar_ToolBar.swift */; };
 		FC7B467F293DCBB800618EA4 /* Calendar_WeekBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B467E293DCBB800618EA4 /* Calendar_WeekBar.swift */; };
+		FC7B469D293E9EAF00618EA4 /* DayCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B469C293E9EAF00618EA4 /* DayCount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC28ACFC29380B4F0048BB5D /* Todo_NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_NewTask.swift; sourceTree = "<group>"; };
 		FC28AD42293C1BD50048BB5D /* Todo_TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_TaskDetailView.swift; sourceTree = "<group>"; };
+		FC35C8C52946EE4100414D34 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
+		FC35C8C72946EEA200414D34 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
+		FC35C8C92946EEED00414D34 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		FC35C8CB2946EF7600414D34 /* CardDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetails.swift; sourceTree = "<group>"; };
+		FC35C8CD2946F00300414D34 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
+		FC35C8CF2946F17700414D34 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FC35C8D12946F29D00414D34 /* DateSubstraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSubstraction.swift; sourceTree = "<group>"; };
+		FC35C8D32946F2B800414D34 /* CodableColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableColors.swift; sourceTree = "<group>"; };
 		FC7218E0293689C800EBE57A /* RemindYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7218E3293689C800EBE57A /* RemindYouApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindYouApp.swift; sourceTree = "<group>"; };
 		FC7218E5293689C800EBE57A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +76,7 @@
 		FC7B467A293DCAE800618EA4 /* Calendar_Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar_Base.swift; sourceTree = "<group>"; };
 		FC7B467C293DCB2800618EA4 /* Calendar_ToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar_ToolBar.swift; sourceTree = "<group>"; };
 		FC7B467E293DCBB800618EA4 /* Calendar_WeekBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar_WeekBar.swift; sourceTree = "<group>"; };
+		FC7B469C293E9EAF00618EA4 /* DayCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +134,7 @@
 		FC7218F629368B4C00EBE57A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FC7B469F293E9FF800618EA4 /* DayCount */,
 				FC7B4673293DC67B00618EA4 /* Calendar */,
 				FC7B4669293D313800618EA4 /* Todo */,
 			);
@@ -125,6 +144,7 @@
 		FC7218F729368B5F00EBE57A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FC7B469E293E9FDC00618EA4 /* DayCount */,
 				FC7B466B293D8B7700618EA4 /* Calendar */,
 				FC7B466A293D8B6A00618EA4 /* Todo */,
 			);
@@ -134,6 +154,7 @@
 		FC7218F829368B6C00EBE57A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FC7B469B293E9E9000618EA4 /* DayCount */,
 				FC7B4668293D311600618EA4 /* Calendar */,
 				FC7B4667293D2F8D00618EA4 /* Todo */,
 				FC7218FB29368C3500EBE57A /* TabbarView.swift */,
@@ -197,6 +218,36 @@
 				FC7B4674293DC69300618EA4 /* Date.swift */,
 			);
 			path = Calendar;
+			sourceTree = "<group>";
+		};
+		FC7B469B293E9E9000618EA4 /* DayCount */ = {
+			isa = PBXGroup;
+			children = (
+				FC7B469C293E9EAF00618EA4 /* DayCount.swift */,
+				FC35C8C52946EE4100414D34 /* CardListView.swift */,
+				FC35C8CB2946EF7600414D34 /* CardDetails.swift */,
+				FC35C8CD2946F00300414D34 /* AddEventView.swift */,
+				FC35C8CF2946F17700414D34 /* CardView.swift */,
+			);
+			path = DayCount;
+			sourceTree = "<group>";
+		};
+		FC7B469E293E9FDC00618EA4 /* DayCount */ = {
+			isa = PBXGroup;
+			children = (
+				FC35C8C72946EEA200414D34 /* CardsViewModel.swift */,
+			);
+			path = DayCount;
+			sourceTree = "<group>";
+		};
+		FC7B469F293E9FF800618EA4 /* DayCount */ = {
+			isa = PBXGroup;
+			children = (
+				FC35C8C92946EEED00414D34 /* Card.swift */,
+				FC35C8D12946F29D00414D34 /* DateSubstraction.swift */,
+				FC35C8D32946F2B800414D34 /* CodableColors.swift */,
+			);
+			path = DayCount;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +322,9 @@
 			files = (
 				FC7218FC29368C3500EBE57A /* TabbarView.swift in Sources */,
 				FC7B467D293DCB2800618EA4 /* Calendar_ToolBar.swift in Sources */,
+				FC35C8C82946EEA200414D34 /* CardsViewModel.swift in Sources */,
 				FC7B4677293DC71000618EA4 /* Calendar_Cell.swift in Sources */,
+				FC35C8D22946F29D00414D34 /* DateSubstraction.swift in Sources */,
 				FC7B467F293DCBB800618EA4 /* Calendar_WeekBar.swift in Sources */,
 				FC7218ED293689CA00EBE57A /* Persistence.swift in Sources */,
 				FC72190029368DA100EBE57A /* LandingViewModel.swift in Sources */,
@@ -283,13 +336,20 @@
 				FC72190229368E0700EBE57A /* TaskList.swift in Sources */,
 				FC7B466D293DC3C400618EA4 /* Calendar_Page.swift in Sources */,
 				FC7218E6293689C800EBE57A /* ContentView.swift in Sources */,
+				FC35C8D02946F17700414D34 /* CardView.swift in Sources */,
+				FC35C8CE2946F00300414D34 /* AddEventView.swift in Sources */,
+				FC35C8D42946F2B800414D34 /* CodableColors.swift in Sources */,
 				FC7B466F293DC40400618EA4 /* CalendarPageViewModel.swift in Sources */,
+				FC35C8CC2946EF7600414D34 /* CardDetails.swift in Sources */,
 				FC7218F0293689CA00EBE57A /* RemindYou.xcdatamodeld in Sources */,
+				FC35C8CA2946EEED00414D34 /* Card.swift in Sources */,
 				FC28ACFD29380B4F0048BB5D /* Todo_NewTask.swift in Sources */,
 				FC7218E4293689C800EBE57A /* RemindYouApp.swift in Sources */,
 				FC7B4679293DC83200618EA4 /* Calendar_DateCollection.swift in Sources */,
+				FC7B469D293E9EAF00618EA4 /* DayCount.swift in Sources */,
 				FC7218FA29368BB100EBE57A /* Todo.swift in Sources */,
 				FC7218FE29368D1C00EBE57A /* Calendar.swift in Sources */,
+				FC35C8C62946EE4100414D34 /* CardListView.swift in Sources */,
 				FC721906293690E900EBE57A /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
