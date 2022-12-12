@@ -10,12 +10,14 @@ import SwiftUI
 @main
 struct RemindYouApp: App {
     let persistenceController = PersistenceController.shared
-
+    @StateObject private var cardsViewModel = CardsViewModel()
+    
     var body: some Scene {
         WindowGroup {
 //            ContentView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
             TabbarView()
+                .environmentObject(cardsViewModel)
         }
     }
 }
