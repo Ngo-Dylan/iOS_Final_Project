@@ -40,6 +40,7 @@
 		FC7B467D293DCB2800618EA4 /* Calendar_ToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B467C293DCB2800618EA4 /* Calendar_ToolBar.swift */; };
 		FC7B467F293DCBB800618EA4 /* Calendar_WeekBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B467E293DCBB800618EA4 /* Calendar_WeekBar.swift */; };
 		FC7B469D293E9EAF00618EA4 /* DayCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B469C293E9EAF00618EA4 /* DayCount.swift */; };
+		FCC4D6BD294D375F00063B88 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4D6BC294D375F00063B88 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		FC7B467C293DCB2800618EA4 /* Calendar_ToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar_ToolBar.swift; sourceTree = "<group>"; };
 		FC7B467E293DCBB800618EA4 /* Calendar_WeekBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar_WeekBar.swift; sourceTree = "<group>"; };
 		FC7B469C293E9EAF00618EA4 /* DayCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCount.swift; sourceTree = "<group>"; };
+		FCC4D6BC294D375F00063B88 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				FC7B4668293D311600618EA4 /* Calendar */,
 				FC7B4667293D2F8D00618EA4 /* Todo */,
 				FC7218FB29368C3500EBE57A /* TabbarView.swift */,
+				FCC4D6BC294D375F00063B88 /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				FC35C8CA2946EEED00414D34 /* Card.swift in Sources */,
 				FC28ACFD29380B4F0048BB5D /* Todo_NewTask.swift in Sources */,
 				FC7218E4293689C800EBE57A /* RemindYouApp.swift in Sources */,
+				FCC4D6BD294D375F00063B88 /* SettingsView.swift in Sources */,
 				FC7B4679293DC83200618EA4 /* Calendar_DateCollection.swift in Sources */,
 				FC7B469D293E9EAF00618EA4 /* DayCount.swift in Sources */,
 				FC7218FA29368BB100EBE57A /* Todo.swift in Sources */,

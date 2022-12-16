@@ -22,6 +22,10 @@ struct TabbarView: View {
                 .tabItem() {
                     Label("Day Count", systemImage: "calendar.day.timeline.trailing")
                 }
+            SettingsView()
+                .tabItem() {
+                    Label("Settings", systemImage: "gearshape")
+                }
         }
     }
 }
